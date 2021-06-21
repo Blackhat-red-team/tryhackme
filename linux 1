@@ -1,0 +1,170 @@
+Welcome to the first part of the "Linux Fundamentals" room series. You're most likely using a Windows or Mac machine, both are different in visual design and how they operate. Just like Windows, iOS and MacOS, Linux is just another operating system and one of the most popular in the world powering smart cars, android devices, supercomputers, home appliances, enterprise servers, and more.
+
+We'll be covering some of the history behind Linux and then eventually starting your journey of being a Linux-wizard! This room will have you:
+
+Running your very first commands in an interactive Linux machine in your browser
+Teaching you some essential commands used to interact with the file system
+Introduce you to how users and groups work on Linux (and what this means for us as penetration testers)
+Answer the questions below
+Let's get started!
+no ansanwer
+task 2
+Where is Linux Used?
+It's fair to say that Linux is a lot more intimidating to approach than Operating System's (OSs) such as Windows. Both variants have their own advantages and disadvantages. For example, Linux is considerably much more lightweight and you'd be surprised to know that there's a good chance you've used Linux in some form or another every day! Linux powers things such as:
+
+Websites that you visit
+Car entertainment/control panels
+Point of Sale (PoS) systems such as checkout tills and registers in shops
+Critical infrastructures such as traffic light controllers or industrial sensors
+
+Flavours of Linux
+The name "Linux" is actually an umbrella term for multiple OS's that are based on UNIX (another operating system). Thanks to UNIX being open-source, variants of Linux comes in all shapes and sizes - suited best for what the system is being used for.
+
+For example, Ubuntu & Debian are some of the more commonplace distributions of Linux because it is so extensible. I.e. you can run Ubuntu as a server (such as websites & web applications) or as a fully-fledged desktop. For this series, we're going to be using Ubuntu.
+
+Ubuntu Server can run on systems with only 512MB of RAM
+
+
+Similar to how you have different versions Windows (7, 8 and 10), there are many different versions/distributions of Linux.
+
+Answer the questions below
+Research: What year was the first release of a Linux operating system?
+1991
+task 3
+اولا سوف اتصل ب ال vpn الخاص بالماشين 
+
+This room has a Ubuntu Linux machine that you can interact with all within your browser whilst following along with this room's material. 
+
+However, to get started, simply press the green "Start Machine" button on the top-right of this task indicated by the arrow on the right: 
+
+Once deployed, a card will appear at the top of the room:
+
+
+
+This contains all of the information for the machine deployed in the room including the IP address and expiry timer - along with buttons to manage the machine. Remember to "Terminate" a machine once you are done with the room. More information on this can be found in the tutorial room.
+
+For now, press "Start Machine" where you will be able to interact with your own Linux machine within your browser whilst following along with this room: 
+
+Answer the questions below
+I've deployed my first Linux machine!
+no answer
+task 4 
+ساكتب الامر 
+whoamu 
+من ان لاجيب علي السوال المطروح 
+ثم ساكتب 
+echo
+ثم ساكتب في السوال اللي بعده 
+tryhackme
+Answer the questions below
+If we wanted to output the text "TryHackMe", what would our command be?
+echo TryHackMe
+What is the username of who you're logged in as on your deployed Linux machine?
+
+tryhackme
+
+task 5 
+ساكتب الامر لاستعراض الملفات في المسار 
+ls 
+ثم ساكتب 
+ls folder 1
+ثم ساكتب 
+cd folder 2
+ثم ساكتب 
+ls 
+ثم
+ساكتب 
+cd ..
+ثم ساكتب 
+clear 
+لمسح التيرمنال 
+ثم ساكتب 
+pwd 
+ثم 
+cd folder 1
+ثم ساكتب 
+ls 
+ثم ساكتب 
+pwd 
+ثم ساكتب 
+ls folder 3 
+ls folder 4
+ثم ساكتب 
+cat folder4/note.txt
+ونلاحظ انه يحتوي علي 
+hello world 
+ثم نكتب 
+cd folder 4 
+ونكتب pwd
+ونلاحظ انها اجابه السوال التالي 
+
+Answer the questions below
+On the Linux machine that you deploy, how many folders are there?
+4
+Which directory contains a file? 
+
+folder4
+What is the contents of this file?
+
+Hello World
+Use the cd command to navigate to this file and find out the new current working directory. What is the path?
+
+/home/tryhackme/folder4
+ثم نعمل 
+cd ..
+ثم نكتب 
+grep"THM*" access.log
+سنلاحظ ان اجابه السوال التالي 
+thm{access}
+task 6 
+Answer the questions below
+Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?
+
+THM{ACCESS}
+And I still haven't found what I'm looking for!
+No answer needed
+
+سوف نكتب الامر التالي 
+cd ..
+echo hello
+ثم سوف نفهم الاجابه 
+الاولي 
+تساوي 
+&
+الثانيه 
+تساوي 
+echo password123 >>passwords
+الثالثة 
+echo tryhackme >>passwords
+
+task 7 
+Answer the questions below
+If we wanted to run a command in the background, what operator would we want to use?
+&
+If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?
+
+echo password123 > passwords
+Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be
+
+echo tryhackme >> passwords
+Now use the deployed Linux machine to put these into practice
+No answer needed
+
+task 9
+Answer the questions below
+I'll have a play around!
+No answer needed
+
+task 
+Visit part two of the Linux fundamentals series here! https://tryhackme.com/room/linuxfundamentalspart2
+
+Answer the questions below
+Terminate the machine deployed in this room from task 3. 
+
+No answer needed
+Join Linux Fundamentals Part 2!
+
+No answer needed
+
+
+task 5
