@@ -1,0 +1,255 @@
+This room will cover:
+Why cryptography matters for security and CTFs
+The two main classes of cryptography and their uses
+RSA, and some of the uses of RSA
+2 methods of Key Exchange
+Notes about the future of encryption with the rise of Quantum Computing
+Note: This room expects some familiarity with tools, and some research into how to use them yourself!
+I recommend completing CC Pentesting first for some familiarity with John The Ripper.
+
+Answer the questions below
+I'm ready to learn about encryption
+No answer needed
+
+task 2
+مفاتيح ال ssh 
+محميه بكلمه مرور ام لا 
+تم العثور علي الجواب في ملف السوال 
+وهو 
+عبارة المرور: منفصلة عن المفتاح ، تشبه عبارة المرور كلمة المرور وتستخدم لحماية المفتاح.
+وهو 
+passphrase
+Answer the questions below
+I agree not to complain too much about how theory heavy this room is.
+
+No answer needed
+Are SSH keys protected with a passphrase or a password?
+
+passphrase
+
+task 3 
+تخدم التشفير لحماية السرية وضمان النزاهة وضمان المصداقية وحمايه الجميع وحماية انت شخصيا انت تستخدم التشفير  ككل دقيه تقريبا من https 
+وغيره 
+هو بروتوكول شبكة تشفير لتشغيل خدمات الشبكة بشكل آمن عبر شبكة غير آمنة
+علي عكس 
+ftp 
+ANSWER: Secure Shell
+عندما تتصل بالبنك الذي تتعامل معه ، هناك شهادة تستخدم التشفير لإثبات أنه البنك الذي تتعامل معه وليس متسللًا.
+مثل الاتصال ب https 
+وهي يستخدم مفتاحين لحمايتك 
+مثل 
+ca 
+السوال التالي الاجابه ستكون الشهادات 
+ ما هي مجموعة المعايير الرئيسية التي تحتاج إلى الالتزام بها إذا قمت بتخزين أو معالجة او اي عمليه دفع اونلاين او غيرها 
+ كلما دعت الحاجة إلى تخزين بيانات المستخدم الحساسة ، يجب تشفيرها. تنص معايير مثل PCI-DSS على أنه يجب تشفير البيانات أثناء الراحة (في التخزين) وأثناء إرسالها. إذا كنت تتعامل مع تفاصيل بطاقة الدفع ، فأنت بحاجة إلى الامتثال للوائح PCI هذه .
+
+مثل 
+ال privte key 
+و ال public key 
+الجواب هو 
+PCI-DSS
+
+Answer the questions below
+What does SSH stand for?
+Secure Shell
+How do webservers prove their identity?
+
+certificates
+What is the main set of standards you need to comply with if you store or process payment card details?
+
+PCI-DSS
+
+task 4 
+السوال الاول 
+What’s 30 % 5?
+الجواب 0 
+السوال الثاني الجواب 
+What’s 25 % 7
+4
+السوال التالي هو 
+What’s 118613842 % 9091
+وضعته في جوجل وظهرت الاجابه علي يمين الصفحه وهو 
+ANSWER: 3565
+اذا كتب السوال في جوجل وستظهرلك النتيجه 
+
+
+
+Answer the questions below
+What's 30 % 5?
+0
+What's 25 % 7
+
+4
+What's 118613842 % 9091
+
+3565
+
+task 5 
+Should you trust DES? Yea/Nay
+الجواب بالطبع لا 
+ no no no 
+ ولماذا 
+ بسبب 
+  من أمثلة التشفير المتماثل DES (كسر) و AES. تميل هذه الخوارزميات إلى أن تكون أسرع من التشفير غير المتماثل ، وتستخدم مفاتيح أصغر 
+  السوال التالي 
+  What was the result of the attempt to make DES more secure so that it could be used for longer?
+  The algorithm is believed to be practically secure in the form of Triple DES, although there are theoretical attacks. You can read about DES
+  ANSWER: Triple DES
+  
+  
+  السوال التالي 
+  Is it ok to share your public key? Yea/Nay
+   لديك المفتاح الخاص يحتاج إلى سرية ،
+   اذن الاجابه ستكون بالطبع 
+   نعم 
+   
+  
+Answer the questions below
+Should you trust DES? Yea/Nay
+Nay
+What was the result of the attempt to make DES more secure so that it could be used for longer?
+
+Triple DES
+Is it ok to share your public key? Yea/Nay
+
+Yea
+
+task 6 
+السوال التالي هو سهل جدا 
+سوف نذهب لهذا الموقع ونضع المتغيررات 
+https://www.cs.drexel.edu/~jpopyack/IntroCS/HW/RSAWorksheet.html
+
+p= 4391, q= 6659. What is n?
+الاجابه ستكون 
+ANSWER: 29239669
+السوال التالي 
+ I understand enough about RSA to move on, and I know where to look to learn more if I want to.
+ الجواب لا لا حاجة للاجابه 
+Answer the questions below
+p = 4391, q = 6659. What is n?
+29239669
+I understand enough about RSA to move on, and I know where to look to learn more if I want to.
+
+No answer needed
+
+
+task 7 
+السوال التالي 
+I understand how keys can be established using Public Key (asymmetric) cryptography.
+الاجابه 
+ANSWER: No answer needed
+
+Answer the questions below
+I understand how keys can be established using Public Key (asymmetric) cryptography.
+No answer needed
+
+task 8 
+لتوقيعات الرقمية هي طريقة لإثبات صحة الملفات ، لإثبات من قام بإنشائها أو تعديلها. باستخدام التشفير غير المتماثل ، يمكنك إنتاج توقيع بمفتاحك الخاص ويمكن التحقق منه باستخدام مفتاحك العام. نظرًا لأنه يجب أن يكون لديك فقط حق الوصول إلى مفتاحك الخاص ، فهذا يثبت أنك وقعت على الملف. التوقيعات الرقمية والتوقيعات المادية لها نفس القيمة في المملكة المتحدة ، من الناحية القانونية.
+
+
+------------------------
+What company is TryHackMe’s certificate issued to?
+الاجابه هي 
+هناك 
+ANSWER: CloudFlare
+
+Answer the questions below
+What company is TryHackMe's certificate issued to?
+CloudFlare
+
+task 9 What algorithm does the key use?
+
+recommend giving this a go yourself. Deploy a VM, like Learn Linux and try to add an SSH key and log in with the private key.
+ANSWER: No answer needed
+السوال التالي 
+Download the SSH Private Key attached to this room.
+ANSWER: No answer needed
+What algorithm does the key use?
+
+cat /root/Downloads/idrsa.id_rsa
+ده اجابه السوال في المكان ده 
+ANSWER: RSA
+Answer the questions below
+I recommend giving this a go yourself. Deploy a VM, like Linux Fundamentals 2 and try to add an SSH key and log in with the private key.
+
+No answer needed
+Download the SSH Private Key attached to this room.
+
+No answer needed
+What algorithm does the key use?
+السوال التالي 
+Crack the password with John The Ripper and rockyou, what’s the passphrase for the key?
+نعم 
+You can use this commands:
+
+/usr/share/john/ssh2john.py [downloaded file location] > [new file name]
+
+john [new file name] --worldlist=[[rockyou.txt file location]]
+You can see my operation-----
+ANSWER: delicious
+
+RSA
+Crack the password with John The Ripper and rockyou, what's the passphrase for the key?
+
+delicious
+
+task 10 
+understand how Diffie Hellman Key Exchange works at a basic level
+ANSWER: No answer needed
+
+Answer the questions below
+I understand how Diffie Hellman Key Exchange works at a basic level
+No answer needed
+
+task 11
+Time to try some GPG. Download the archive attached and extract it somewhere sensible.
+ANSWER: No answer needed
+
+
+ You have the private key, and a file encrypted with the public key. Decrypt the file. What’s the secret word?
+You can use this commands:
+
+unzip gpg.zip
+
+sudo gpg --import tryhackme.key
+
+sudo gpg message.gpg
+
+ls
+
+cat message
+You can see my operations:
+
+
+ANSWER: Pineapple
+
+What is PGP?
+PGP stands for Pretty Good Privacy. It’s a software that implements encryption for encrypting files, performing digital signing and more.
+
+What is GPG?
+GnuPG or GPG is an Open Source implementation of PGP from the GNU project. You may need to use GPG to decrypt files in CTFs. With PGP/GPG, private keys can be protected with passphrases in a similar way to SSH private keys. If the key is passphrase protected, you can attempt to crack this passphrase using John The Ripper and gpg2john. The key provided in this task is not protected with a passphrase.
+
+The man page for GPG can be found online here.
+
+What about AES?
+AES, sometimes called Rijndael after its creators, stands for Advanced Encryption Standard. It was a replacement for DES which had short keys and other cryptographic flaws.
+
+AES and DES both operate on blocks of data (a block is a fixed size series of bits).
+
+AES is complicated to explain, and doesn’t seem to come up as often. If you’d like to learn how it works, here’s an excellent video from Computerphile https://www.youtube.com/watch?v=O4xNJsjtN6E
+
+Answer the questions below
+Time to try some GPG. Download the archive attached and extract it somewhere sensible.
+No answer needed
+You have the private key, and a file encrypted with the public key. Decrypt the file. What's the secret word?
+
+Pineapple
+
+task 12 
+ I understand that quantum computers affect the future of encryption. I know where to look if I want to learn more.
+ANSWER: No answer needed
+
+Answer the questions below
+I understand that quantum computers affect the future of encryption. I know where to look if I want to learn more.
+No answer needed
+
