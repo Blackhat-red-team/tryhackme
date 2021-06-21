@@ -1,0 +1,124 @@
+This is a challenge that is exactly what is says on the tin, there are a few challenges around investigating a windows machine that has been previously compromised.
+
+Connect to the machine using RDP. The credentials the machine are as follows:
+
+Username: Administrator
+Password: letmein123!
+
+Please note that this machine does not respond to ping (ICMP) and may take a few minutes to boot up.
+
+سوف اقو بالاتصال بالويندوز عن طريق 
+xfreerdp
+المرحله الثانيه 
+دعونا نلقي نظره علي النظام 
+نفتح ال 
+cmd 
+ونكتب الامر 
+systeminfo
+نلاحظ بعض المعلومات 
+النظام هو 
+wimdows server 2016
+
+المرحله التاليه 
+لنري اسماء المستخدمين 
+netusers
+نري لدينا مسئول وثلاثة مستخدمين 
+المرحله التاليه 
+نري اخر مره قد سجل الدخول فيها 
+ويظهر امامنا بعض المعلومات ان المسئول اخر مره دخل فيها 
+هي 2021
+3/4/2021
+نلقي نظره علي المتخدم التالي 
+جون
+نلاحظ ان جون اخر مره سجل فيها الدخول كان من يومين 
+لا قبل يومين في الواقع لمده عامين 
+والان لنري نوع النظام 
+والان علينا ان نعرف  من هم المشرفين ومن هم غير المشرفين 
+سابحث في الوبندوز عن اداه 
+run 
+سوف نكتب الامر 
+lusrmanger.msc
+انتقل الان للمستدخدمين لذا دعونا نري بالفعل 
+نلاحظ ان جيرني فقط وادمن استريور 
+فلنري جون 
+فنجد انه user 
+عادي 
+الان دعونا ننتقل لعارض الاحداث 
+eventviewer 
+دعنا ندخل الي سجلات ويندوز 
+ندخل الي 
+الامان ونعمل تصنيف للنظام 
+دهونا نري اخر محاوله اختراق 
+ونجيب عن الاسئله 
+اخر خص ادنت 
+هو الادسمتروتر 
+متي قفل جون اخر مره 
+نكتب الامر 
+netuserjohn
+وناخذ الوقت ونلصقه في الاجابه 
+نلاحظ انه 
+03/2019 5:48:22
+ونجيب علي السوال التالي ما هو عنوان الايبي الذي يتصل به الضحيه 
+ندخل علي ريجستير ونجيب الايبي 
+ونجيب علي باقي الاسئله من 
+event view 
+
+task1 
+
+Answer the questions below
+Whats the version and year of the windows machine?
+
+Windows Server 2016
+Which user logged in last?
+
+Administrator
+When did John log onto the system last?
+
+Answer format: MM/DD/YYYY H:MM:SS AM/PM
+
+03/02/2019 5:48:32 PM
+What IP does the system connect to when it first starts?
+
+10.34.2.3
+What two accounts had administrative privileges (other than the Administrator user)?
+
+Answer format: username1, username2
+
+Jenny, Guest
+Whats the name of the scheduled task that is malicous.
+
+Clean file system
+What file was the task trying to run daily?
+
+nc.ps1
+What port did this file listen locally for?
+
+1348
+When did Jenny last logon?
+
+Never
+At what date did the compromise take place?
+
+Answer format: MM/DD/YYYY
+
+03/02/2019
+At what time did Windows first assign special privileges to a new logon?
+
+Answer format: MM/DD/YYYY HH:MM:SS AM/PM
+
+03/02/2019 4:04:49 PM
+What tool was used to get Windows passwords?
+
+Mimikatz
+What was the attackers external control and command servers IP?
+
+76.32.97.132
+What was the extension name of the shell uploaded via the servers website?
+
+.jsp
+What was the last port the attacker opened?
+
+1337
+Check for DNS poisoning, what site was targeted?
+
+google.com
